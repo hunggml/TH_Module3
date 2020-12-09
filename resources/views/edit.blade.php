@@ -10,28 +10,46 @@
                     <div class="form-group">
                         <label>Mã số Đại lý</label>
                         <input type="text" class="form-control" name="maso" value="{{ $agency->maso }}">
+                        @error('maso')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Tên Đại lý</label>
                         <input type="text" class="form-control" name="name" value="{{ $agency->name }}">
+                        @error('name')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Điện thoại </label>
                         <input type="text" class="form-control" name="phone" value="{{ $agency->phone }}">
+                        @error('phone')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="text" class="form-control" name="email" value="{{ $agency->email }}">
+                        @error('email')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Địa chỉ </label>
                         <textarea class="form-control" name="address">
                             {{ $agency->address }}
                         </textarea>
+                        @error('address')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Tên nguời quản lý </label>
                         <input type="text" class="form-control" name="manager" value="{{ $agency->manager }}">
+                        @error('manager')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Trạng thái:</label>

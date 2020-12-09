@@ -19,9 +19,9 @@
                     <button type="submit" style="border-radius: 10px" >Search</button>
                 </form>
             </div>
-            <table class="table table-striped">
+            <table class="table table-striped" style="border-radius: 10px!important;">
                 <thead>
-                <tr class="item-group">
+                <tr class="item-group" style="background-color: aqua">
                     <th scope="col">Mã số đại lý</th>
                     <th scope="col">Tên đại lý</th>
                     <th scope="col">Điện thoại</th>
